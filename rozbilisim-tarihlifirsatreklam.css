@@ -1,0 +1,401 @@
+ /* ROZ Bilişim ve Yazılım */
+ *! iFrame Resizer (Geriye Doğru Tarihli Sayaç) - v3.3.1 - 2019-1-8
+ *  Desc: ROZ Design - Bilişim - Yazılım - SEO ve İnternet Hizmetleri
+ *  Requires: ROZ TASARIM.
+ *  Copyright: (c) 2019 ROZ Bilişim ve Yazılım - rozbilisim.tr.gg
+ *  Dual licensed under the MIT (MIT-LICENSE.txt) 
+ *  and GPL (GPL-LICENSE.txt) licenses.
+ */
+ * ================================================================ 
+Bu telif hakkı bildirimine her zaman dokunulmamalıdır. 
+Telif Hakkı (c) 2019 ROZ BİLİŞİM ve YAZILIM - rozbilisim.tr.gg - tüm hakları saklıdır.
+=================================================================== */
+        {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Open Sans, sans-serif;
+            margin: 0;
+        }
+        .sale-preheader {
+            padding: 10px 0;
+            background-color: #1b1c1d;
+            -webkit-animation: appear 3s;
+            animation: appear 3s;
+            z-index: 100000;
+            box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1);
+        }
+        .sale-preheader .container {
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;}
+
+        @-webkit-keyframes appear {
+            0% {
+                opacity: 0; }
+            50% {
+                opacity: 0; }
+            100% {
+                opacity: 1; } }
+
+        @keyframes appear {
+            0% {
+                opacity: 0; }
+            50% {
+                opacity: 0; }
+            100% {
+                opacity: 1; } }
+
+        .sale-preheader__holder {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            text-align: center; }
+        @media (max-width: 991px) {
+            .sale-preheader__holder {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                justify-content: space-evenly; } }
+
+        .sale-preheader-holder__left {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            min-width: 65%; }
+        @media (max-width: 991px) {
+            .sale-preheader-holder__left {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+                margin-bottom: 10px; } }
+        @media (max-width: 768px) {
+            .sale-preheader-holder__left {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column; } }
+        @media (max-width: 600px) {
+            .sale-preheader-holder__left {
+                margin-bottom: 10px; } }
+
+        @media (max-width: 1199px) {
+            .sale-preheader-holder-left__text {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row; } }
+
+        @media (max-width: 480px) {
+            .sale-preheader-holder-left__text {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column; } }
+
+        .sale-preheader-holder-left__text {
+            line-height: 30px;
+            font-size: 20px;
+            color: white;
+            text-transform: uppercase;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+            margin-right: 20px; }
+        .sale-preheader-holder-left-text__img {
+            width: 200px!important;
+            height: 60px!important;
+            margin-right: 20px;
+        }
+        @media (max-width: 1199px){
+            .sale-preheader-holder-left-text__img {
+                margin-right: 10px;
+            }
+        }
+        @media (max-width: 1199px) {
+            .sale-preheader-holder-left__text {
+                font-size: 18px;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column; } }
+        @media (max-width: 991px) {
+            .sale-preheader-holder-left__text {
+                display: none } }
+        @media (max-width: 768px) {
+            .sale-preheader-holder-left__text {
+                margin-right: 0; } }
+        @media (max-width: 480px) {
+            .sale-preheader-holder-left__text {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column; } }
+
+        .sale-preheader-holder-left-text__left {
+            font-weight: 600;
+            margin-right: 10px; }
+        @media (max-width: 480px) {
+            .sale-preheader-holder-left-text__left {
+                margin-right: 0;
+                font-size: 14px; } }
+        .sale-preheader-holder-left-text__left {
+            font-weight: 600;
+            margin-right: 10px; }
+
+        .sale-preheader-holder-left-text__right {
+            font-weight: 700;
+            font-size: 28px;
+            color: #fb1f23; }
+        .sale-preheader-holder__btn-wrapper {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            min-width: 230px; }
+        @media(min-width: 991px) {
+            .sale-preheader-holder__btn-wrapper {
+                margin-left: 20px;
+                margin-right: 50px;
+            }
+        }
+        .sale-preheader-holder-btn-wrapper__btn {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 6px;
+            background-color: #fb1f23;
+            color: #fff;
+            padding: 13px;
+            width: 100%;
+            letter-spacing: 1px;
+            text-decoration: none;
+            max-width: 300px; }
+        .sale-preheader-holder-btn-wrapper__btn:visited {
+            font-size: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 6px;
+            background-color: #fb1f23;
+            color: #fff;
+            padding: 13px;
+            width: 100%;
+            letter-spacing: 1px;
+            text-decoration: none;
+            max-width: 300px; }
+        .sale-preheader-holder-btn-wrapper__btn:hover {
+            background-color: #fb1f23 !important;
+            color: #fff!important;
+        }
+        .sale-preheader-holder-btn-wrapper__btn:focus {
+            background-color: #fb1f23 !important;
+            color: #fff!important;
+        }
+        .sale-preheader-holder__close-wrapper {
+            cursor: pointer;
+            color: white;
+            position: absolute;
+            right: 10px;
+            top: 8px;
+        }
+
+        .sale-preheader-holder-btn-wrapper__btn:focus, .sale-preheader-holder-btn-wrapper__btn:hover {
+            color: white;
+            text-decoration: none;
+            background-color: #fb1f24; }
+        @media (max-width: 768px) {
+            .sale-preheader-holder-btn-wrapper__btn {
+                padding: 10px; } }
+        .calendar-timer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+        .calendar-timer--pre-header {
+            text-align: center; }
+        @media (max-width: 768px) {
+            .calendar-timer--pre-header .calendar-timer-holder__col-holder {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row; } }
+        .calendar-timer--pre-header .calendar-timer-holder-col-holder__col {
+            margin: 0;
+            padding: 0 10px;
+            min-height: unset; }
+        @media (max-width: 1199px) {
+            .calendar-timer--pre-header .calendar-timer-holder-col-holder__col .explained {
+                font-size: 8px; } }
+        @media (max-width: 768px) {
+            .calendar-timer--pre-header .calendar-timer-holder-col-holder__col {
+                min-width: 60px;
+                padding: 0 5px; }
+            .calendar-timer--pre-header .calendar-timer-holder-col-holder__col .explained {
+                font-size: 10px; } }
+        .calendar-timer--pre-header .triangle-left {
+            margin-left: 0; }
+        .calendar-timer--pre-header .triangle-right {
+            margin-right: 0; }
+        @media (max-width: 768px) {
+            .calendar-timer--pre-header .triangle-left, .calendar-timer--pre-header .triangle-right {
+                display: block; } }
+
+        .calendar-timer__holder {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+
+        .calendar-timer-holder__col-holder {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+
+        .calendar-timer-holder-col-holder__col {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding: 10px;
+            color: white;
+            border-radius: 6px;
+            min-width: 70px;
+            min-height: 70px;
+            margin: 0 10px; }
+        .calendar-timer-holder-col-holder__col .value {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1.4px; }
+        .calendar-timer-holder-col-holder__col .explained {
+            font-size: 12px;
+            font-weight: normal; }
+
+        .triangle-left {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: 15px solid #fb1f24;
+            border-bottom: 10px solid transparent;
+            margin-left: 10px; }
+
+        .triangle-right {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-left: 15px solid #fb1f24;
+            border-bottom: 10px solid transparent;
+            margin-right: 10px; }
+
+        @media (max-width: 768px) {
+            .triangle-left, .triangle-right {
+                display: none; }
+            .calendar-timer-holder__col-holder {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column; } }
+
+        .container-timer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: 3rem; }
+        .container-timer .clock-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 400;
+            text-transform: uppercase; }
+        .container-timer .value {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center; }
+        .container-timer .explained {
+            text-align: center; }
+
+        .container-timer-white {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-bottom: 3rem; }
+        .container-timer-white .clock-holder {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+        .container-timer-white .value {
+            font-size: 80px;
+            font-weight: 600;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
+        .container-timer-white .explained {
+            text-align: center;
+            font-size: 18px; }
+        .container-timer-white .days, .container-timer-white .hours, .container-timer-white .minutes, .container-timer-white .seconds {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+        .container-timer-white .seperator {
+            font-size: 80px;
+            margin: 0 20px; }
+        @media (max-width: 600px) {
+            .container-timer-white .clock-holder {
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+            .container-timer-white .seperator {
+                display: none; }
+            .container-timer-white .days, .container-timer-white .hours, .container-timer-white .minutes, .container-timer-white .seconds {
+                margin-right: 20px; }
+        }
+		
